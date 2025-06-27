@@ -242,7 +242,7 @@ h1 {
 
 .heading-2 {
   aspect-ratio: auto;
-  color: #333;
+  color: #000;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -750,7 +750,7 @@ h1 {
   border-radius: 1em;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Naturebeauty, Arial, sans-serif;
+  font-family: Inconsolata, monospace;
   transition: opacity 50ms;
   transform: translate(0);
 }
@@ -1347,6 +1347,14 @@ h1 {
   color: #000;
 }
 
+.link-5 {
+  text-decoration: none;
+}
+
+.link-5.w--current {
+  color: #333;
+}
+
 @media screen and (max-width: 991px) {
   .menu-button {
     margin-top: 20px;
@@ -1663,7 +1671,7 @@ h1 {
   }
 
   .heading-2 {
-    margin-top: 20px;
+    margin-top: 28px;
     font-size: 2em;
   }
 
@@ -1827,6 +1835,7 @@ h1 {
   .paragraph-3 {
     text-align: left;
     margin-top: 10px;
+    margin-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
   }
