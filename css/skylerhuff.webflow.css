@@ -754,8 +754,10 @@ h1 {
   mix-blend-mode: normal;
   background-color: #933d3a;
   background-image: url('../images/new-background-2.png');
-  background-position: 0 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   border-radius: 1em;
   margin-top: 0;
   margin-bottom: 0;
