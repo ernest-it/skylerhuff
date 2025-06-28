@@ -301,7 +301,7 @@ h1 {
 }
 
 .page-heading {
-  color: #fff;
+  color: #000;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
@@ -1347,15 +1347,19 @@ h1 {
 }
 
 .text-block-6 {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 2em;
   text-decoration: none;
 }
 
 .link-4 {
-  color: #fff;
+  color: #000;
   text-decoration: none;
+}
+
+.link-4:hover {
+  color: #00000080;
 }
 
 .link-5 {
@@ -1862,8 +1866,8 @@ h1 {
   }
 
   .image-5 {
-    width: 15em;
-    padding-top: 30px;
+    width: 12em;
+    padding-top: 32px;
   }
 }
 
