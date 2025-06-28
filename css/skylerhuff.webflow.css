@@ -139,9 +139,9 @@ h1 {
 
 .navbar-button {
   opacity: 1;
-  color: #2e2e2e;
+  color: #000;
   text-align: center;
-  background-color: #c0b7af;
+  background-color: #c0b7af00;
   border-radius: 1em;
   justify-content: center;
   align-items: center;
@@ -156,17 +156,21 @@ h1 {
 }
 
 .navbar-button:hover {
-  background-color: #bbb;
+  background-color: #fff;
 }
 
 .navbar-button.w--current {
   color: #000;
-  background-color: #c0b7af;
+  background-color: #c0b7af00;
   font-family: Inconsolata, monospace;
 }
 
+.navbar-button.w--current:hover {
+  background-color: #fff;
+}
+
 .navbar {
-  background-color: #f0f0f0;
+  background-color: #f0f0f000;
   margin-bottom: 0;
   padding: 10px 60px;
 }
@@ -295,7 +299,7 @@ h1 {
 }
 
 .page-heading {
-  color: #333;
+  color: #fff;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
@@ -747,6 +751,9 @@ h1 {
   color: #000;
   mix-blend-mode: normal;
   background-color: #933d3a;
+  background-image: url('../images/new-background-2.png');
+  background-position: 0 0;
+  background-size: cover;
   border-radius: 1em;
   margin-top: 0;
   margin-bottom: 0;
@@ -1338,13 +1345,15 @@ h1 {
 }
 
 .text-block-6 {
-  color: #000;
+  color: #fff;
   text-align: center;
+  font-size: 2em;
   text-decoration: none;
 }
 
 .link-4 {
-  color: #000;
+  color: #fff;
+  text-decoration: none;
 }
 
 .link-5 {
@@ -1352,7 +1361,11 @@ h1 {
 }
 
 .link-5.w--current {
-  color: #333;
+  color: #000;
+}
+
+.link-5.w--current:active, .link-5.w--current:visited {
+  color: #fff;
 }
 
 @media screen and (max-width: 991px) {
