@@ -172,7 +172,7 @@ h1 {
 }
 
 .navbar {
-  background-color: #f0f0f000;
+  background-color: #a8a4a7cc;
   margin-bottom: 0;
   padding: 10px 60px;
 }
@@ -200,7 +200,7 @@ h1 {
   flex: none;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 1.9em;
   margin-left: 0;
   padding-top: 0;
   font-family: Inconsolata, monospace;
@@ -1378,7 +1378,7 @@ h1 {
 
 .image-5 {
   width: 35em;
-  padding-top: 15px;
+  padding-top: .5em;
   display: inline-block;
 }
 
@@ -1421,7 +1421,8 @@ h1 {
   }
 
   .nav-menu {
-    background-color: #c8c8c800;
+    background-color: #a8a4a7cc;
+    margin-top: 0;
   }
 
   .menu-button {
@@ -1544,6 +1545,12 @@ h1 {
   .dropdown-nav-item---brix {
     margin-bottom: 12px;
     line-height: 1.6;
+  }
+
+  .paragraph-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
   }
 
   .image-5 {
@@ -1670,6 +1677,12 @@ h1 {
 
   .dropdown-nav-item---brix {
     margin-bottom: 12px;
+  }
+
+  .paragraph-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
   }
 
   .image-5 {
@@ -1840,6 +1853,13 @@ h1 {
     padding-right: 20px;
   }
 
+  .index-body {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
   .index-heading {
     margin-top: 60px;
     margin-bottom: 20px;
@@ -1937,20 +1957,28 @@ h1 {
   }
 
   .image-4 {
-    padding-top: 40px;
+    width: 15em;
+    padding-top: 0;
   }
 
   .paragraph-3 {
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1em;
   }
 
   .image-5 {
-    width: 12em;
+    width: 10em;
     padding-top: 32px;
+    padding-left: 10px;
+  }
+
+  .footer-dark {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer-copyright-center {
