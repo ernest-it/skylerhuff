@@ -266,7 +266,7 @@ h1 {
 .div-block-3 {
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -753,11 +753,7 @@ h1 {
   color: #000;
   mix-blend-mode: normal;
   background-color: #933d3a;
-  background-image: url('../images/new-background-2.png');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: linear-gradient(#a8a4a7, #b00);
   border-radius: 1em;
   margin-top: 0;
   margin-bottom: 0;
@@ -1351,6 +1347,7 @@ h1 {
 .text-block-6 {
   color: #000;
   text-align: center;
+  margin-bottom: 20px;
   font-size: 2em;
   text-decoration: none;
 }
@@ -1377,8 +1374,8 @@ h1 {
 }
 
 .image-5 {
-  width: 35em;
-  padding-top: .5em;
+  width: 20em;
+  padding-top: 1.75em;
   display: inline-block;
 }
 
@@ -1413,6 +1410,70 @@ h1 {
 
 .link-6 {
   color: #000;
+}
+
+.image-6 {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-bottom: 100px;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+.link-block-5 {
+  display: block;
+}
+
+.div-block-6 {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.form-fields {
+  color: #000;
+  text-align: left;
+  background-color: #a8a4a7cc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 0%;
+  margin-bottom: .5em;
+  display: block;
+}
+
+.submit {
+  color: #000;
+  text-align: center;
+  background-color: #a8a4a7cc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: .25em 0%;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.form-field-labels {
+  font-size: 1.5em;
+}
+
+.form-block {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.text-block-7 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.success-message {
+  background-color: #ddd0;
+}
+
+.error-message {
+  background-color: #ffdede00;
 }
 
 @media screen and (max-width: 991px) {
@@ -1853,13 +1914,6 @@ h1 {
     padding-right: 20px;
   }
 
-  .index-body {
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
   .index-heading {
     margin-top: 60px;
     margin-bottom: 20px;
@@ -1985,6 +2039,23 @@ h1 {
     padding-top: 40px;
     position: absolute;
     inset: auto 0% 0%;
+  }
+
+  .image-6 {
+    margin-left: 220px;
+    margin-right: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .div-block-6 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .form-block {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 

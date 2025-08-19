@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 29 2025 06:12:33 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Aug 19 2025 03:03:16 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="685f41c3f907ab64b92a2db3" data-wf-site="685c589a86e47d0029cab00c">
 <head>
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
       <a href="index.html" class="w-inline-block"><img src="images/Skyler-Huff.svg" loading="lazy" width="428" alt="" class="image-5"></a>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="book-appointment.html" aria-current="page" class="navbar-button w-nav-link w--current">Book Appointment</a>
-        <a href="certifications.html" class="navbar-button w-nav-link">Certifications</a>
+        <a href="certifications.html" class="navbar-button w-nav-link">Certification</a>
         <a href="contact.html" class="navbar-button w-nav-link">Contact</a>
       </nav>
       <div class="menu-button w-nav-button">
@@ -30,8 +30,76 @@
       </div>
     </div>
   </div>
-  <div class="div-block-3">
-    <h1 class="page-heading">Appointment Booking Coming Soon!</h1>
+  <div class="div-block-6">
+    <div class="div-block-3">
+      <h1 class="page-heading">Book Appointment</h1>
+    </div>
+    <div class="text-block-7">Please fill out this form and I will contact you with my available times as soon as possible.</div>
+    <div class="form-block w-form">
+      <form id="email-form" name="email-form" method="POST" action="https://formspree.io/f/myzparqw">
+  <label for="name" class="form-field-labels">Name</label>
+  <input class="form-fields w-input" maxlength="256" name="name" id="name" type="text" required>
+
+  <label for="Email" class="form-field-labels">Email Address</label>
+  <input class="form-fields w-input" maxlength="256" name="email" id="Email" type="email" required>
+
+  <label for="Preferred-Meeting-Days-of-The-Week" class="form-field-labels">Preferred Meeting Day</label>
+  <input class="form-fields w-input" maxlength="256" name="preferred_day" id="Preferred-Meeting-Days-of-The-Week" type="text">
+
+  <label for="Best-Times-For-Meetings" class="form-field-labels">Preferred Meeting Time</label>
+  <input class="form-fields w-input" maxlength="256" name="preferred_time" id="Best-Times-For-Meetings" type="text">
+
+  <!-- Optional: set your email subject -->
+  <input type="hidden" name="_subject" value="New appointment request">
+
+  <!-- Optional: spam honeypot -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <input type="submit" class="submit w-button" value="Submit">
+</form>
+
+<script>
+  (function () {
+    const form = document.getElementById('email-form');
+    if (!form) return;
+    const wrapper = form.closest('.w-form') || form.parentElement;
+    const done = wrapper ? wrapper.querySelector('.w-form-done') : null;
+    const fail = wrapper ? wrapper.querySelector('.w-form-fail') : null;
+
+    if (done) done.style.display = 'none';
+    if (fail) fail.style.display = 'none';
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+        if (res.ok) {
+          form.reset();
+          if (done) done.style.display = 'block';
+          if (fail) fail.style.display = 'none';
+        } else {
+          if (done) done.style.display = 'none';
+          if (fail) fail.style.display = 'block';
+        }
+      } catch (err) {
+        if (done) done.style.display = 'none';
+        if (fail) fail.style.display = 'block';
+      }
+    });
+  })();
+</script>
+      <div class="success-message w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="error-message w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div>
   </div>
   <section class="footer-dark">
     <div class="footer-copyright-center">Copyright © 2025 Skyler Huff <br>
