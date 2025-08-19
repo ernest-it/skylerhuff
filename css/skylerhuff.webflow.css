@@ -1476,6 +1476,16 @@ h1 {
   background-color: #ffdede00;
 }
 
+.code-embed-2 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.div-block-7 {
+  margin-left: 50em;
+  margin-right: 50em;
+}
+
 @media screen and (max-width: 991px) {
   .icon {
     background-color: #0000;
@@ -1622,6 +1632,11 @@ h1 {
   .footer-copyright-center {
     position: absolute;
   }
+
+  .div-block-7 {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1762,6 +1777,11 @@ h1 {
 
   .footer-copyright-center {
     position: absolute;
+  }
+
+  .div-block-7 {
+    margin-left: .5em;
+    margin-right: .5em;
   }
 }
 
@@ -2056,6 +2076,11 @@ h1 {
   .form-block {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .div-block-7 {
+    margin-left: .25em;
+    margin-right: .25em;
   }
 }
 
