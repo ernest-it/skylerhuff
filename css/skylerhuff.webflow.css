@@ -1505,6 +1505,10 @@ h1 {
     background-color: #c8c8c800;
   }
 
+  .page-heading {
+    margin-top: 10px;
+  }
+
   .collection-item {
     width: 50%;
   }
@@ -1652,6 +1656,10 @@ h1 {
 
   .menu-button {
     padding-top: 12px;
+  }
+
+  .page-heading {
+    margin-top: 10px;
   }
 
   .grid {
@@ -1874,6 +1882,7 @@ h1 {
   }
 
   .page-heading {
+    margin-top: 10px;
     margin-bottom: 0;
     font-size: 2em;
   }
