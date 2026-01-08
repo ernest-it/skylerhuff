@@ -1,9 +1,6 @@
-/* ===================================
-   MODERN STYLES - SKYLER HUFF
-   Personal Trainer Website
-   =================================== */
+/* Modern Styles for Skyler Huff PT Website */
 
-/* ===== CSS Variables ===== */
+/* CSS Variables */
 :root {
   /* Colors */
   --primary: #FF6B35;
@@ -52,7 +49,7 @@
   --transition-slow: 0.5s ease;
 }
 
-/* ===== Reset & Base Styles ===== */
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +94,7 @@ ul {
   list-style: none;
 }
 
-/* ===== Typography ===== */
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
@@ -114,14 +111,14 @@ p {
   margin-bottom: var(--spacing-sm);
 }
 
-/* ===== Container ===== */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
 
-/* ===== Navigation ===== */
+/* Navigation */
 .navbar {
   position: fixed;
   top: 0;
@@ -212,7 +209,7 @@ p {
   transition: var(--transition-base);
 }
 
-/* ===== Hero Section ===== */
+/* Hero */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -324,7 +321,7 @@ p {
   color: var(--primary);
 }
 
-/* ===== Buttons ===== */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -387,7 +384,7 @@ p {
   font-size: 1.125rem;
 }
 
-/* ===== Section Styles ===== */
+/* Sections */
 section {
   padding: var(--spacing-xl) 0;
 }
@@ -415,7 +412,7 @@ section {
   font-weight: 800;
 }
 
-/* ===== About Section ===== */
+/* About */
 .about-section {
   background: var(--white);
 }
@@ -480,7 +477,7 @@ section {
   letter-spacing: 1px;
 }
 
-/* ===== Services Section ===== */
+/* Services */
 .services-section {
   background: var(--background);
 }
@@ -562,7 +559,7 @@ section {
   margin: 0;
 }
 
-/* ===== CTA Section ===== */
+/* CTA */
 .cta-section {
   background: var(--gradient-primary);
   color: var(--white);
@@ -620,7 +617,7 @@ section {
   background: var(--light-gray);
 }
 
-/* ===== Footer ===== */
+/* Footer */
 .footer {
   background: var(--dark);
   color: var(--light-gray);
@@ -691,7 +688,7 @@ section {
   color: var(--primary);
 }
 
-/* ===== Animations ===== */
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -723,7 +720,7 @@ section {
   }
 }
 
-/* ===== Responsive Design ===== */
+/* Responsive */
 @media (max-width: 968px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -928,7 +925,7 @@ section {
   }
 }
 
-/* ===== Touch Device Optimizations ===== */
+/* Touch devices */
 @media (hover: none) and (pointer: coarse) {
   /* Optimize tap targets for touch devices */
   .btn {
@@ -955,7 +952,7 @@ section {
   }
 }
 
-/* ===== Landscape Mobile Optimizations ===== */
+/* Landscape mode */
 @media (max-width: 968px) and (orientation: landscape) {
   .hero {
     min-height: auto;
@@ -981,7 +978,7 @@ section {
   }
 }
 
-/* ===== Very Small Devices ===== */
+/* Small screens */
 @media (max-width: 360px) {
   .stats-grid {
     gap: var(--spacing-sm);

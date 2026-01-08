@@ -1,13 +1,9 @@
-// ===================================
-// FORM HANDLER - SKYLER HUFF
-// Handles form submission with Formspree
-// ===================================
+// Form submission handler
 
 document.addEventListener('DOMContentLoaded', function() {
 
   const form = document.getElementById('email-form');
-
-  if (!form) return; // Exit if form doesn't exist on this page
+  if (!form) return;
 
   const successMessage = document.querySelector('.form-success');
   const errorMessage = document.querySelector('.form-error');
@@ -84,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Form validation - add real-time feedback
+  // Real-time validation
   const inputs = form.querySelectorAll('input[required], textarea[required]');
 
   inputs.forEach(input => {

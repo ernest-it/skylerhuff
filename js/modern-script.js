@@ -1,12 +1,8 @@
-// ===================================
-// MODERN SCRIPT - SKYLER HUFF
-// Personal Trainer Website
-// ===================================
+// Main JavaScript for Skyler Huff PT site
 
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-  // ===== Mobile Navigation Toggle =====
+  // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
 
@@ -44,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // ===== Navbar Scroll Effect =====
+  // Navbar shadow on scroll
   const navbar = document.getElementById('navbar');
   let lastScrollTop = 0;
 
@@ -61,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lastScrollTop = scrollTop;
   });
 
-  // ===== Smooth Scroll for Anchor Links =====
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -83,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ===== Intersection Observer for Animations =====
+  // Animation on scroll
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -144,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
   `;
   document.head.appendChild(style);
 
-  // ===== Active Page Highlight =====
+  // Set active nav link
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinksAll = document.querySelectorAll('.nav-link');
 
@@ -155,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // ===== Scroll Progress Indicator (Optional) =====
+  // Progress bar
   function createScrollProgress() {
     // Check if we're on a page with enough content to scroll
     const body = document.body;
@@ -215,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   createScrollProgress();
 
-  // ===== Add Hover Effect to Buttons =====
+  // Button ripple effect
   const buttons = document.querySelectorAll('.btn');
   buttons.forEach(button => {
     button.addEventListener('mouseenter', function(e) {
@@ -236,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ===== Lazy Loading Images Enhancement =====
+  // Lazy load images
   if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -255,19 +251,12 @@ document.addEventListener('DOMContentLoaded', function() {
     lazyImages.forEach(img => imageObserver.observe(img));
   }
 
-  // ===== Console Welcome Message =====
-  console.log(
-    '%c🏋️ Skyler Huff Personal Training',
-    'font-size: 20px; font-weight: bold; color: #FF6B35;'
-  );
-  console.log(
-    '%cBuilding strength, confidence, and sustainable fitness habits.',
-    'font-size: 14px; color: #6C757D;'
-  );
+  // Console message
+  console.log('%c🏋️ Skyler Huff Personal Training', 'font-size: 20px; font-weight: bold; color: #FF6B35;');
 
 });
 
-// ===== Prevent animations on page resize =====
+// Stop animations during resize
 let resizeTimer;
 window.addEventListener('resize', function() {
   document.body.classList.add('resize-animation-stopper');
@@ -277,7 +266,7 @@ window.addEventListener('resize', function() {
   }, 400);
 });
 
-// Add CSS to stop animations during resize
+// CSS for resize
 const resizeStyle = document.createElement('style');
 resizeStyle.textContent = `
   .resize-animation-stopper * {
