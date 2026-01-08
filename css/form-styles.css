@@ -402,6 +402,10 @@
   .contact-methods {
     grid-template-columns: 1fr;
   }
+
+  .certification-info {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -409,15 +413,125 @@
     padding: calc(80px + var(--spacing-lg)) var(--spacing-sm) var(--spacing-md);
   }
 
+  .page-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .page-header-content p {
+    font-size: 1rem;
+  }
+
   .form-wrapper {
     padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 0.875rem;
   }
 
   .certification-display {
     padding: var(--spacing-md);
   }
 
-  .certification-info {
-    grid-template-columns: 1fr;
+  .certification-intro {
+    font-size: 1rem;
+  }
+
+  .contact-section {
+    padding: calc(80px + var(--spacing-lg)) var(--spacing-sm) var(--spacing-lg);
+  }
+
+  .contact-intro {
+    font-size: 1rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-item:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: calc(80px + var(--spacing-md)) 1rem var(--spacing-md);
+  }
+
+  .page-header-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .form-section {
+    padding: var(--spacing-md) 0;
+  }
+
+  .form-wrapper {
+    padding: var(--spacing-sm);
+  }
+
+  .form-group {
+    gap: 0.375rem;
+  }
+
+  .form-group label {
+    font-size: 0.875rem;
+  }
+
+  .contact-form {
+    gap: var(--spacing-sm);
+  }
+
+  .info-item h3 {
+    font-size: 1rem;
+  }
+
+  .info-item p {
+    font-size: 0.875rem;
+  }
+
+  .contact-icon,
+  .info-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+  }
+
+  .certification-display {
+    padding: var(--spacing-sm);
+  }
+
+  .cert-detail {
+    padding: var(--spacing-sm);
+  }
+
+  .cert-detail h3 {
+    font-size: 1rem;
+  }
+
+  .cert-detail p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Touch-friendly form inputs */
+@media (hover: none) and (pointer: coarse) {
+  .form-group input,
+  .form-group textarea {
+    min-height: 48px;
+    font-size: 16px; /* Prevents iOS zoom */
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  button[type="submit"] {
+    min-height: 52px;
   }
 }
